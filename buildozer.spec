@@ -8,7 +8,7 @@ icon.filename = icon.png
 source.dir = .
 source.include_exts = py
 version = 1.0.0
-requirements = python3,kivy==2.3.0
+requirements = hostpython3==3.11.5,python3==3.11.5,kivy==2.3.0
 orientation = portrait
 fullscreen = 1
 
