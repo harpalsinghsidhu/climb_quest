@@ -6,7 +6,7 @@ on:
 jobs:
   build-android:
     name: Build for Android
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
           path: |
             .buildozer
             ~/.buildozer
-          key: buildozer2-${{ hashFiles('buildozer.spec') }}
+          key: buildozer3-${{ hashFiles('buildozer.spec') }}
 
       - name: Build APK
         run: buildozer -v android debug
